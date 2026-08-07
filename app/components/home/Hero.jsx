@@ -12,10 +12,10 @@ export default function Hero(){
         <span className="mb-4 rounded-full bg-white/20 px-4 py-2 text-sm text-white backdrop-blur">
             Excellence • Integrity • Innovation
         </span>
-        <h2 className="mb-5 max-w-3xl text-5xl font-bold leading-tight text-white md:text-6xl">
+        <h2 className="mb-5 max-w-3xl text-3xl font-bold leading-tight text-white md:text-6xl">
             Inspiring Excellence, Building Future Leaders
         </h2>
-        <p className="mb-10 max-w-2xl text-lg leading-relaxed text-white/90">
+        <p className="mb-10 max-w-2xl leading-relaxed text-white/90">
             Empowering students through exceptional learning, character formation,
             and a holistic education that prepares them to thrive in a changing world.
         </p>

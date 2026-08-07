@@ -9,18 +9,18 @@ export default function WhoWeAre(){
                 About Our School
                 </h4>
 
-                <h2 className="mt-2 text-3xl font-bold  md:text-4xl">
+                <h2 className="mt-2 text-2xl font-bold ">
                 Inspiring Excellence, Shaping Tomorrow's Leaders
                 </h2>
 
-                <p className="mt-5 text-lg leading-relaxed text-gray-600">
+                <p className="mt-5 leading-relaxed text-gray-600">
                 A center of excellence in education, NextGen Academy combines strong
                 values with innovative learning approaches to create an environment
                 where students are inspired to discover, grow, and succeed. We don't
                 just educate; we shape future leaders.
                 </p>
 
-                <p className="mt-5 text-lg leading-relaxed text-gray-600">
+                <p className="mt-5  leading-relaxed text-gray-600">
                 Our learning environment is designed to encourage creativity, critical
                 thinking, and personal growth, ensuring every student develops the
                 confidence, skills, and character needed to make a meaningful impact
