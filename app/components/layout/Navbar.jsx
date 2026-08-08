@@ -18,12 +18,12 @@ export default function Navbar() {
           <Image
             src="/images/logo.jpeg"
             alt="School Logo"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             className="rounded-full border-2 border-white"
           />
           <div>
-            <h1 className="font-bold text-lg">
+            <h1 className="font-bold md:text-lg">
               NextGen Academy
             </h1>
             <p className="text-xs text-white/80">

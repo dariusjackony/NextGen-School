@@ -25,7 +25,7 @@ export default function CurriculumOverview(){
             },
     ];
     return(
-        <section className="px-4 mt-10">
+        <section className="px-4 mt-20">
             <div>
                 <div className="mx-auto flex max-w-7xl flex-col items-center items-start md:px-6 md:flex-row md:items-start md:gap-16">
                     <div className="md:w-1/3">
@@ -34,7 +34,7 @@ export default function CurriculumOverview(){
                         </h1>
                     </div>
                     <div className="md:w-2/3">
-                        <p className="text-lg mt-2 leading-relaxed text-gray-600">
+                        <p className="mt-2 leading-relaxed text-gray-600">
                         NextGen Academy offers a comprehensive and balanced curriculum designed
                         to develop academic excellence, creativity, and critical thinking.
                         Our learning approach combines strong foundational knowledge with

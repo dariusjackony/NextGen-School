@@ -1,7 +1,7 @@
 
 export default function WelcomeSection(){
     return(
-        <div className="mx-4 mt-10  bg-[#8C1515] px-6 py-12 text-white  md:mx-auto md:max-w-5xl md:px-12">
+        <div className="mx-4 mt-20  bg-[#8C1515] px-6 py-12 text-white  md:mx-auto md:max-w-5xl md:px-12">
         <div className="text-center">
           <h2 className="mb-5 text-2xl font-bold ">
             Welcome to NextGen Academy
