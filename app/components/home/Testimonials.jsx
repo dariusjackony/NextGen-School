@@ -34,7 +34,7 @@ export default function Testimonials() {
   }, []);
   const testimonial = testimonials[current];
   return (
-    <section className="px-6 py-16">
+    <section className="px-4 py-16">
       <div className="mx-auto max-w-4xl text-center">
         <p className="font-semibold text-lg text-[#8C1515]">
           Testimonials
