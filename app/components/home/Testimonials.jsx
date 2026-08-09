@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 const testimonials = [
@@ -39,21 +38,17 @@ export default function Testimonials() {
         <p className="font-semibold text-lg text-[#8C1515]">
           Testimonials
         </p>
-
         <h2 className="mt-2 text-2xl font-bold md:text-4xl">
           What Our Community Says
         </h2>
-
         <div className="mt-10  bg-[#8C1515] px-8 py-10 text-white shadow-xl">
           <p className="text-lg leading-relaxed md:text-xl">
             “{testimonial.message}”
           </p>
-
           <div className="mt-6">
             <h3 className="font-bold">
               {testimonial.name}
             </h3>
-
             <p className="mt-1 text-sm text-white/70">
               {testimonial.role}
             </p>
