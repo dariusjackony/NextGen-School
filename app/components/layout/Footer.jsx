@@ -33,6 +33,32 @@ export default function Footer() {
             development, and a holistic education that prepares them for
             the future.
           </p>
+        <div className="mt-5">
+        <h3 className="text-lg font-semibold">
+            Stay Updated
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-white/80">
+            Subscribe to receive the latest school news, events, and announcements.
+        </p>
+
+        <form className="mt-5">
+            <div className="flex overflow-hidden bg-white">
+            <input
+                type="email"
+                placeholder="Your email address"
+                className="min-w-0 flex-1 px-4 py-3 text-sm text-black outline-none"
+            />
+
+            <button
+                type="submit"
+                className="bg-black cursor-pointer px-5 py-3 text-sm font-semibold text-white "
+            >
+                Subscribe
+            </button>
+            </div>
+        </form>
+        </div>
         </div>
         <div>
           <h3 className="text-lg font-semibold">
