@@ -43,6 +43,7 @@ export default function Newsletter() {
           />
           <button
             type="submit"
+            onClick={() => setIsOpen(false)}
             className="mt-3 w-full bg-[#8C1515] px-4 py-3 font-semibold text-white hover:bg-[#731111]"
           >
             Subscribe
