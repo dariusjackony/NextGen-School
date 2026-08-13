@@ -38,7 +38,7 @@ export default function Testimonials() {
         <p className="font-semibold text-lg text-[#8C1515]">
           Testimonials
         </p>
-        <h2 className="mt-2 text-2xl font-bold md:text-4xl">
+        <h2 className="mt-2 text-2xl font-bold">
           What Our Community Says
         </h2>
         <div className="mt-10  bg-[#8C1515] px-8 py-10 text-white shadow-xl">
