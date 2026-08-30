@@ -7,13 +7,10 @@ export default function Hero(){
             backgroundImage: "url('/images/heropic.jpg')"
         }}
         >
-        <div className="absolute bg-black/40 inset-0"></div>
-        <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
-        <span className="mb-4 rounded-full bg-white/20 px-4 py-2 text-sm text-white backdrop-blur">
-            Excellence • Integrity • Innovation
-        </span>
-        <h2 className="mb-5 max-w-3xl text-3xl font-bold leading-tight text-white md:text-6xl">
-            Inspiring Excellence, Building Future Leaders
+        <div className="absolute bg-black/60 inset-0"></div>
+        <div className="relative z-10 flex h-full flex-col items-start text-left justify-center px-10 text-center">
+        <h2 className="mb-5 max-w-2xl text-3xl font-bold leading-tight text-white md:text-4xl">
+            Over 30 Years of excellence and improvement on the Children
         </h2>
         <p className="mb-10 max-w-2xl leading-relaxed text-white/90">
             Empowering students through exceptional learning, character formation,
@@ -23,7 +20,7 @@ export default function Hero(){
             <button
             className="border border-white px-8 py-3 font-semibold text-white transition duration-300 hover:bg-white hover:text-[#8C1515]"
             >
-            Begin Your Journey
+            Learn More 
             </button>
 
             <Button className="px-8 py-3">
