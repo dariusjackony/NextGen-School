@@ -8,7 +8,7 @@ export default function Hero(){
         }}
         >
         <div className="absolute bg-black/60 inset-0"></div>
-        <div className="relative z-10 flex h-full flex-col items-start text-left justify-center px-10 text-center">
+        <div className="relative z-10 flex h-full flex-col items-start text-left justify-center px-4 text-center">
         <h2 className="mb-5 max-w-2xl text-3xl font-bold leading-tight text-white md:text-4xl">
             Over 30 Years of excellence and improvement on the Children
         </h2>
