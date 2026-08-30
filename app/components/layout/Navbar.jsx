@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-[#8C1515]/95 backdrop-blur-md text-white shadow-lg">
       <div className="mx-auto flex items-center justify-between px-6 py-3">
-        
+
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
@@ -49,7 +49,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="relative font-medium transition hover:text-yellow-300 group"
+              className="group relative font-medium transition hover:text-yellow-300"
             >
               {link.name}
 
@@ -68,38 +68,85 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden"
+          className="relative z-50 flex h-10 w-10 items-center justify-center rounded-full transition hover:bg-white/10 md:hidden"
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
-          {menuOpen ? (
-            <X size={28} />
-          ) : (
-            <Menu size={28} />
-          )}
+          <div
+            className={`transition-all duration-300 ${
+              menuOpen
+                ? "rotate-90 scale-110"
+                : "rotate-0 scale-100"
+            }`}
+          >
+            {menuOpen ? (
+              <X size={28} />
+            ) : (
+              <Menu size={28} />
+            )}
+          </div>
         </button>
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden border-t border-white/20 px-6 py-4">
-          <div className="flex flex-col gap-4">
-            {links.map((link) => (
+      <div
+        className={`overflow-hidden border-t border-white/20 transition-all duration-500 ease-in-out md:hidden ${
+          menuOpen
+            ? "max-h-[600px] opacity-100"
+            : "max-h-0 border-transparent opacity-0"
+        }`}
+      >
+        <div
+          className={`px-6 py-5 transition-all duration-500 ${
+            menuOpen
+              ? "translate-y-0"
+              : "-translate-y-5"
+          }`}
+        >
+          <div className="flex flex-col gap-1">
+
+            {/* Mobile Links */}
+            {links.map((link, index) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="font-medium hover:text-yellow-300 transition"
+                className={`group flex items-center justify-between rounded-lg px-4 py-3 font-medium transition-all duration-500 hover:bg-white/10 hover:text-yellow-300 ${
+                  menuOpen
+                    ? "translate-x-0 opacity-100"
+                    : "-translate-x-6 opacity-0"
+                }`}
+                style={{
+                  transitionDelay: menuOpen
+                    ? `${index * 70}ms`
+                    : "0ms",
+                }}
               >
-                {link.name}
+                <span>{link.name}</span>
               </Link>
             ))}
 
-            <Button className="w-full bg-white text-[#8C1515] hover:bg-yellow-300 hover:text-black">
-              Apply Now
-            </Button>
+            {/* Apply Button */}
+            <div
+              className={`mt-4 transition-all duration-500 ${
+                menuOpen
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-5 opacity-0"
+              }`}
+              style={{
+                transitionDelay: menuOpen
+                  ? `${links.length * 70}ms`
+                  : "0ms",
+              }}
+            >
+              <Button className="w-full bg-white py-3 text-[#8C1515] shadow-md transition-all duration-300 hover:bg-yellow-300 hover:text-black hover:shadow-lg">
+                Apply Now
+              </Button>
+            </div>
+
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
