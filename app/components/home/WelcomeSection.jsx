@@ -1,6 +1,6 @@
 export default function WelcomeSection() {
   return (
-    <section className="absolute left-1/2 top-[90%] md:top-[100%] z-20 w-[calc(100%-2rem)] -translate-x-1/2 md:max-w-5xl">
+    <section className="px-4 mt-10 mx-auto md:max-w-5xl">
       <div className="bg-[#8C1515] px-6 py-10 text-white shadow-xl md:px-12 md:py-12">
         <div className="mx-auto max-w-3xl text-center">
 
@@ -14,6 +14,7 @@ export default function WelcomeSection() {
             and a supportive learning environment, we nurture confident,
             responsible, and future-ready leaders.
           </p>
+
         </div>
       </div>
     </section>

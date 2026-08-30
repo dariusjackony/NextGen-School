@@ -2,7 +2,7 @@ import Image from "next/image"
 import Button from "../ui/Button"
 export default function WhoWeAre(){
     return(
-        <div className="px-4 mt-79 md:mt-67">
+        <div className="px-4 mt-10">
            <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 md:px-6 md:flex-row md:gap-16">
             <div className="w-full md:w-1/2">
                 <h4 className="text-lg font-semibold text-[#8C1515]">
