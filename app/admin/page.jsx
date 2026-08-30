@@ -1,7 +1,8 @@
 "use client"
+
 import { useState } from "react"
 import Button from "@/components/ui/button"
-export default function Admin(){
+export default function AdminPage(){
     const [activeTab, setActiveTab] = useState("admissions")
     return(
         <section className="px-4 mt-20">
